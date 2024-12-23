@@ -1,0 +1,14 @@
+/* bug.css */
+.element {
+  width: calc(100% - 50); /* Error: Missing unit */
+  height: calc(100%-20px); /* Error: No space */
+  margin: calc(20px + 10); /* Error: Missing units */
+}
+
+/* bugSolution.css */
+.element {
+  width: calc(100% - 50px); /* Corrected: Added unit */
+  height: calc(100% - 20px); /* Corrected: Added space */
+  margin: calc(20px + 10px); /* Corrected: Added units */
+  padding: calc((100px - 20px) / 2); /* Corrected: Correct use of parenthesis*/
+}
